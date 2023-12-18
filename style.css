@@ -4,40 +4,32 @@
     box-sizing: border-box;
 }
 
-table {
-    border-collapse: collapse;
-    text-align: center;
-    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    width: 310px;
-    height: 310px;
-    background-color:aqua;
-    color: black;
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
 }
 
-#main-board{
-    margin-left: 670px;
-    margin-top: 150px;
-}
-#heading{
-    margin-left: 740px;
-    margin-top: 100px;
-}
-
-#winnerDiv{
-    margin-left: 775px;
-    margin-top: 10px;
+#main-board {
+	display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 1px;
+	margin-top: 50px;
 }
 
-td{
-    width: 100px;
-    height: 100px;
+.square {
+	background-color: #ddd;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
-.border-down{
-    border-bottom:2px solid red ;
-}
-
-.border-right{
-    border-right:2px solid red ;
+.square:hover {
+	background-color: #eee;
 }

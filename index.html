@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id ="heading">Tic Tac Toe</h1>
-    <table id="main-board">
-        <tbody><tr>
-            <td class="border-down border-right" id="0"></td>
-            <td class="border-down border-right" id="1"></td>
-            <td class="border-down" id="2"></td>
-        </tr>
-        <tr>
-            <td class="border-down border-right" id="3"></td>
-            <td class="border-down border-right" id="4"></td>
-            <td class="border-down" id="5"></td>
-        </tr>
-        <tr>
-            <td class="border-right" id="6"></td>
-            <td class="border-right" id="7"></td>
-            <td id="8"></td>
-        </tr>
-        </tbody>
-    </table>
+    <div id="user_page">
+        <h1>Enter Players Name</h1>
+        <h3 id="P1">Player 1</h3>
+        <input type="text" value="" id="Player1_name"><br><br>
+        <h3 id="P2">Player 2</h3>
+        <input type="text" value="" id="Player2_name"><br><br>
+        <button id="StartGame" onclick="startGame()">Start Game</button>
+    </div>
+    <div id="game">
+    <h1 id ="heading">TIC TAC TOE</h1>
+    <h1>Tic Tac Toe</h1>
+	<div id="main-board">
+		<div id="0" class="square"></div>
+		<div id="1" class="square"></div>
+		<div id="2" class="square"></div>
+		<div id="3" class="square"></div>
+		<div id="4" class="square"></div>
+		<div id="5" class="square"></div>
+		<div id="6" class="square"></div>
+		<div id="7" class="square"></div>
+		<div id="8" class="square"></div>
+	</div>
+    </div>
+    <button onclick="restartGame()" id="restartGame">Restart</button>
+    <button onclick="resetGame()" id="resetGame">Reset</button>
     <h2 id="winnerDiv"></h2>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
